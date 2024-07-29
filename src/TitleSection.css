@@ -1,0 +1,16 @@
+.title-section {
+    width: 100%;
+    margin-top: 2rem; /* 섹션 위쪽 여백 */
+    text-align: left;
+  }
+  
+  .section-title {
+    font-size: 1.75rem;
+    font-weight: bold;
+    margin-bottom: 1rem; /* 제목 아래 여백 */
+  }
+  
+  .section-content {
+    max-width: 37.5rem; /* 600px */
+    text-align: left; /* 텍스트 왼쪽 정렬 */
+  }

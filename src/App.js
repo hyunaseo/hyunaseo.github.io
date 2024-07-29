@@ -2,7 +2,8 @@ import React from 'react';
 import './App.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faYoutube } from '@fortawesome/free-brands-svg-icons';
+import { faFilePdf } from '@fortawesome/free-solid-svg-icons'; // PDF 아이콘 추가
 
 function App() {
   return (
@@ -31,7 +32,7 @@ function App() {
                 </div>
                 <div className="contact-item">
                   <FontAwesomeIcon icon={faGithub} className="contact-icon" />
-                  <a href="https://github.com/hyunas1996" target="_blank" rel="noopener noreferrer">https://github.com/hyunas1996</a>
+                  <a href="https://github.com/hyunaseo" target="_blank" rel="noopener noreferrer">https://github.com/hyunas1996</a>
                 </div>
               </div>
             </div>
@@ -50,6 +51,49 @@ function App() {
               </ul>
             </div>
           </div>
+          <div className="publication-section">
+            <div className='publication-content'>
+              <h2 className="publication-title">Publications</h2>
+              <ul className="publication-list">
+                <li className="publication-item">
+                  <div className="publication-video">
+                    <iframe width="320" height="240" src="https://www.youtube.com/embed/_aDg-ykkT-8" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                  </div>
+                  <div className="publication-description">
+                    <h3>GradualReality</h3>
+                    <p className="publication-authors"><strong><u>Hyuna Seo</u></strong>, Juheon Yi, Rajesh Balan, Youngki Lee</p>
+                    <p>GradualReality enables physical object interaction while being highly immersed into the virtual environment. We designed Interaction State-Aware Blending approach, which gradually integrates physical world information into the virtual world based on the user's current interaction state. Please refer to our demo video!</p>
+                    <div className="publication-links">
+                      <a href="https://github.com/hyunaseo/GradualReality" target="_blank" rel="noopener noreferrer">
+                        <FontAwesomeIcon icon={faGithub} className="publication-icon" />
+                      </a>
+                      <a href="https://doi.org/10.1145/3654777.3676463" target="_blank" rel="noopener noreferrer">
+                        <FontAwesomeIcon icon={faFilePdf} className="publication-icon" />
+                      </a>
+                    </div>
+                  </div>
+                </li>
+                {/* 예시로 두 번째 비디오와 설명 쌍을 추가합니다. 필요에 따라 더 추가할 수 있습니다. */}
+                {/* <li className="publication-item">
+                  <div className="publication-video">
+                    <iframe width="320" height="240" src="https://www.youtube.com/embed/다른_비디오_URL" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                  </div>
+                  <div className="publication-description">
+                    <h3>다른 프로젝트 제목</h3>
+                    <p>다른 프로젝트에 대한 간략한 설명을 여기에 작성합니다.</p>
+                    <div className="publication-links">
+                      <a href="https://github.com/다른_깃허브_URL" target="_blank" rel="noopener noreferrer">
+                        <FontAwesomeIcon icon={faGithub} className="publication-icon" />
+                      </a>
+                      <a href="https://doi.org/다른_DOI_URL" target="_blank" rel="noopener noreferrer">
+                        <FontAwesomeIcon icon={faFilePdf} className="publication-icon" />
+                      </a>
+                    </div>
+                  </div>
+                </li> */}
+              </ul>
+            </div>
+          </div>
         </main>
       </div>
     </div>
@@ -57,11 +101,3 @@ function App() {
 }
 
 export default App;
-
-
-
-
-
-
-
-
