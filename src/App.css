@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-color: white; /* 전체 배경 색상 흰색 */
 }
 
 .App-logo {
@@ -14,23 +15,40 @@
 }
 
 .App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: black; /* 텍스트 색상 검정 */
+  position: relative;
 }
 
-.App-link {
-  color: #61dafb;
+.site-title {
+  position: absolute;
+  top: 60px; /* 더 아래로 이동 */
+  left: 80px; /* 더 오른쪽으로 이동 */
+  font-size: 2rem;
+  color: black; /* 텍스트 색상 검정 */
+  text-decoration: none;
+  font-family: 'Helvetica', sans-serif; /* 폰트 설정 */
+  font-weight: bold; /* 볼드체 설정 */
+}
+
+.site-title:hover {
+  text-decoration: underline;
+  text-decoration-color: #458EF7; /* 호버 시 밑줄 색상 #458EF7 */
 }
 
 h1 {
-  font-size: 4rem; /* 원하는 크기로 조정합니다. */
+  font-size: 6.5rem; /* 원하는 크기로 조정합니다. */
   color: #61dafb;  /* 원하는 색상으로 조정합니다. */
+}
+
+
+.App-link {
+  color: #61dafb;
 }
 
 @keyframes App-logo-spin {
