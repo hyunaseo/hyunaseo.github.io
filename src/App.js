@@ -10,7 +10,8 @@ function App() {
         </nav>
       </header>
       <main>
-        <h1>I'm Hyuna Seo!</h1>
+        <img src={`${process.env.PUBLIC_URL}/profile.jpg`} className="profile-pic" alt="Hyuna Seo" />
+        <h1>Hello I'm Hyuna Seo!</h1>
         {/* 여기에 추가적인 콘텐츠를 작성합니다. */}
       </main>
     </div>

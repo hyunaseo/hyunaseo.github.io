@@ -1,39 +1,28 @@
 .App {
-  text-align: center;
+  text-align: left;
   background-color: white; /* 전체 배경 색상 흰색 */
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  padding-left: 130px;
 }
 
 .App-header {
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
+  flex-direction: column; /* 플렉스 방향을 열로 설정 */
+  align-items: flex-start; /* 왼쪽 정렬 */
   font-size: calc(10px + 2vmin);
   color: black; /* 텍스트 색상 검정 */
   position: relative;
+  padding-top: 20px; /* 상단 여백 추가 */
 }
 
 .site-title {
-  position: absolute;
-  top: 60px; /* 더 아래로 이동 */
-  left: 80px; /* 더 오른쪽으로 이동 */
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: black; /* 텍스트 색상 검정 */
   text-decoration: none;
   font-family: 'Helvetica', sans-serif; /* 폰트 설정 */
   font-weight: bold; /* 볼드체 설정 */
+  position: absolute;
+  margin-top: 50px; /* 원하는 만큼 위쪽 여백 추가 */
+  margin-left: 100px; /* 원하는 만큼 왼쪽 여백 추가 */
 }
 
 .site-title:hover {
@@ -41,21 +30,24 @@
   text-decoration-color: #458EF7; /* 호버 시 밑줄 색상 #458EF7 */
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 100px; /* 텍스트와 사진을 왼쪽 정렬 */
+}
+
+.profile-pic {
+  margin-top: 140px; /* 제목 아래에 공간 추가 */
+  margin-left: 10px;
+  width: 300px; /* 원하는 크기로 조정 */
+  height: 300px; /* 원하는 크기로 조정 */
+  border-radius: 100%; /* 원형으로 만들기 */
+  border: 7px solid #458EF7;
+}
+
 h1 {
-  font-size: 6.5rem; /* 원하는 크기로 조정합니다. */
-  color: #61dafb;  /* 원하는 색상으로 조정합니다. */
-}
-
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  font-size: 1.5rem; /* 원하는 크기로 조정 */
+  color: black;  /* 텍스트 색상 검정 */
+  margin-top: 30px; /* 사진 아래에 여백 추가 */
 }
