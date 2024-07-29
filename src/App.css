@@ -1,7 +1,9 @@
 :root {
   --font-size-base: 1rem;
   --spacing-base: 1rem;
-  --icon-color: #458EF7;
+  --link-color: #295594;
+  --highligh-color: #458EF7;
+  --icon-color: #295594;
 }
 
 * {
@@ -50,7 +52,7 @@ body {
 
 .site-title:hover {
   text-decoration: underline;
-  text-decoration-color: #458EF7;
+  text-decoration-color: var(--highligh-color);
 }
 
 main {
@@ -62,6 +64,8 @@ main {
   text-align: left;
 }
 
+/**********************PROFILE**********************/
+
 .profile-container {
   display: flex;
   align-items: flex-start;
@@ -72,10 +76,10 @@ main {
 }
 
 .profile-pic {
-  width: 16.5rem; /* 240px */
-  height: 16.5rem; /* 240px */
+  width: 15.5rem; /* 240px */
+  height: 15.5rem; /* 240px */
   border-radius: 50%;
-  border: 0.4375rem solid #458EF7; /* 7px */
+  border: 0.4375rem solid var(--highligh-color); /* 7px */
   margin-right: 2.1875rem; /* 35px */
   flex-shrink: 0; /* 이미지가 줄어들지 않도록 */
 }
@@ -97,19 +101,20 @@ main {
 }
 
 .profile-description a {
-  color: #5E5E5E;
+  color: var(--link-color);
   text-decoration: none;
 }
 
 .profile-description a:hover {
   text-decoration: underline;
-  text-decoration-color: #458EF7;
+  text-decoration-color: var(--highligh-color);
 }
 
 .contact-info {
   display: flex;
-  margin-top: var(--spacing-base);
+  /* margin-top: var(--spacing-base); */
   flex-wrap: wrap;
+  margin-top: 0.5rem;
 }
 
 .contact-item {
@@ -127,9 +132,11 @@ main {
   width: 1.25rem; /* 20px */
   height: 1.25rem; /* 20px */
   margin-right: 0.625rem; /* 10px */
+  color: var(--icon-color);
 }
 
-/* News 섹션 스타일 */
+/**********************NEWS**********************/
+
 .news-section {
   display: flex;
   flex-direction: column;
@@ -157,25 +164,29 @@ main {
 }
 
 .news-list li {
+  font-size: 0.9rem;  
   margin-bottom: 0.5rem; /* 리스트 아이템 사이 여백 */
 }
 
 .news-date {
   font-weight: bold;
   color: #458EF7;
+  font-size: 0.9rem; 
 }
 
 .news-list a {
-  color: #5E5E5E;
+  color: var(--link-color);
   text-decoration: none;
+  font-size: 0.9rem; 
 }
 
 .news-list a:hover {
   text-decoration: underline;
-  text-decoration-color: #458EF7;
+  text-decoration-color: var(--highligh-color);
 }
 
-/* Publication 섹션 스타일 */
+/**********************PUBLICATIONS**********************/
+
 .publication-section {
   display: flex;
   flex-direction: column;
@@ -211,15 +222,34 @@ main {
   margin-right: 1rem;
 }
 
-.publication-description .publication-authors{
+.publication-description{
   flex: 1;
   max-width: 52.5rem; /* 600px */
+  font-size: 0.9rem; 
+}
+
+.publication-authors{
+  flex: 1;
+  max-width: 52.5rem; /* 600px */
+  font-size: 0.9rem; 
+  color: var(--link-color);
+}
+
+.publication-authors a {
+  color: var(--link-color);
+  text-decoration: none;
+  font-size: 0.9rem; 
+}
+
+.publication-authors a:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--highligh-color);
 }
 
 .publication-description h3 {
   font-size: 1.5rem;
   margin-bottom: 0.25rem;
-  color: #458EF7;
+  color: var(--highligh-color);
 }
 
 .publication-description p {

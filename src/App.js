@@ -10,9 +10,9 @@ function App() {
     <div className="App">
       <div className='wrapper'>
         <header className="App-header">
-          <nav>
+          {/* <nav>
             <a href="/" className="site-title">Hyuna Seo</a>
-          </nav>
+          </nav> */}
         </header>
         <main>
           <div className="profile-container">
@@ -20,11 +20,12 @@ function App() {
             <div className="profile-description">
               <h1>Hi, I'm Hyuna Seo!</h1>
               <p>
-                I’m a PhD student at the <a href="https://hcs.snu.ac.kr/" target="_blank" rel="noopener noreferrer">Human-Centered Computing Systems Lab</a>, Department of Computer Science and Engineering, Seoul National University, since 2021.02 under the guidance of <a href="https://youngkilee.blogspot.com/" target="_blank" rel="noopener noreferrer">Youngki Lee</a>.
+                I’m a PhD student at <a href="https://hcs.snu.ac.kr/" target="_blank" rel="noopener noreferrer">Human-Centered Computing Systems Lab</a>, Seoul National University, under the guidance of <a href="https://youngkilee.blogspot.com/" target="_blank" rel="noopener noreferrer">Youngki Lee</a>.
               </p>
               <p>
-                My research is focused on designing Cross Reality systems that allow users to remain deeply immersed in virtual environments while seamlessly interacting with the real world according to their needs. I have been exploring a context-aware approach, gradually integrating the real world into the virtual environment based on the user's interaction state.
+              My research focuses on designing Cross Reality systems that keep users deeply immersed in virtual environments while enabling seamless interaction with the real world. I explore context-aware approaches that integrate the real world into the virtual environment based on the user's interaction state.
               </p>
+              <p>You can download my CV here: <a href={`${process.env.PUBLIC_URL}/cv.pdf`} target="_blank" rel="noopener noreferrer">here</a>.</p>
               <div className="contact-info">
                 <div className="contact-item">
                   <FontAwesomeIcon icon={faEnvelope} className="contact-icon" />
@@ -42,12 +43,11 @@ function App() {
               <h2 className="news-title">Latest News & Travels</h2>
               <ul className="news-list">
               <li><span className="news-date">June 2024:</span> I have been selected as <strong>a visiting research student at Singapore Management University</strong>! 
-              I will be working with <a href="https://faculty.smu.edu.sg/profile/rajesh-krishna-balan-591" target="_blank" rel="noopener noreferrer">Rajesh Balan</a> 
-              and <a href="https://www.thivyak.info/" target="_blank" rel="noopener noreferrer">Thivya Kandappu</a> on a Mixed Reality system with emotion sensing technology. 
+              I will be working with <a href="https://faculty.smu.edu.sg/profile/rajesh-krishna-balan-591" target="_blank" rel="noopener noreferrer">Rajesh Balan</a> and <a href="https://www.thivyak.info/" target="_blank" rel="noopener noreferrer">Thivya Kandappu</a> on a Mixed Reality system with emotion sensing technology. 
               My visit will last from September 2024 to March 2025, and I am very excited for this new journey.</li>
               
-              <li><span className="news-date">April 2024:</span> Just submitted my paper to <strong>UIST 2024</strong>! 
-              Big thanks to my co-author Juheon Yi for sticking through despite the busy times moving to the UK!</li>
+              <li><span className="news-date">April 2024:</span> Submitted one paper to <strong>UIST 2024</strong>! 
+              Big thanks to my co-author Juheon Yi for his support during the busy times of moving to the UK!</li>
               </ul>
             </div>
           </div>
@@ -61,7 +61,7 @@ function App() {
                   </div>
                   <div className="publication-description">
                     <h3>GradualReality</h3>
-                    <p className="publication-authors"><strong><u>Hyuna Seo</u></strong>, Juheon Yi, Rajesh Balan, Youngki Lee</p>
+                    <p className="publication-authors"><strong><u>Hyuna Seo</u></strong>, <a href="https://juheonyi.github.io/" target="_blank" rel="noopener noreferrer">Juheon Yi</a>, <a href="https://faculty.smu.edu.sg/profile/rajesh-krishna-balan-591" target="_blank" rel="noopener noreferrer">Rajesh Balan</a>, <a href="https://youngkilee.blogspot.com/" target="_blank" rel="noopener noreferrer">Youngki Lee</a></p>
                     <p>GradualReality enables physical object interaction while being highly immersed into the virtual environment. We designed Interaction State-Aware Blending approach, which gradually integrates physical world information into the virtual world based on the user's current interaction state. Please refer to our demo video!</p>
                     <div className="publication-links">
                       <a href="https://github.com/hyunaseo/GradualReality" target="_blank" rel="noopener noreferrer">
