@@ -28,6 +28,11 @@
   color: #61dafb;
 }
 
+h1 {
+  font-size: 4rem; /* 원하는 크기로 조정합니다. */
+  color: #61dafb;  /* 원하는 색상으로 조정합니다. */
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
