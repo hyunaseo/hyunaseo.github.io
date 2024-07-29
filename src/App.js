@@ -25,7 +25,7 @@ function App() {
               <p>
               My research focuses on designing Cross Reality systems that keep users deeply immersed in virtual environments while enabling seamless interaction with the real world. I explore context-aware approaches that integrate the real world into the virtual environment based on the user's interaction state.
               </p>
-              <p>You can download my CV here: <a href={`${process.env.PUBLIC_URL}/cv.pdf`} target="_blank" rel="noopener noreferrer">here</a>.</p>
+              <p>You can download my CV <a href={`${process.env.PUBLIC_URL}/cv.pdf`} target="_blank" rel="noopener noreferrer">here</a>.</p>
               <div className="contact-info">
                 <div className="contact-item">
                   <FontAwesomeIcon icon={faEnvelope} className="contact-icon" />
