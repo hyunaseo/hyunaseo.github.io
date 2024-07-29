@@ -5,7 +5,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>I'm Hyuna Seo!</h1>
+        <h1>I'm Hyuna Seo</h1>
         {/* 여기에 추가적인 콘텐츠를 작성합니다. */}
       </header>
       <main>
