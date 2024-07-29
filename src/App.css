@@ -1,34 +1,50 @@
+:root {
+  --font-size-base: 1rem;
+  --spacing-base: 1rem;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: var(--font-size-base);
+  padding: var(--spacing-base);
+  line-height: 1.6;
+  background-color: white;
+}
+
 .App {
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
   align-items: center;
-  background-color: white; /* 전체 배경 색상 흰색 */
-  min-height: 100vh; /* 화면 전체 높이 사용 */
-  padding: 0 20px;
+  min-height: 100vh;
+  padding: 0 5%;
 }
 
 .App-header {
   display: flex;
-  flex-direction: column; /* 플렉스 방향을 열로 설정 */
-  align-items: flex-start; /* 왼쪽 정렬 */
+  flex-direction: column;
+  align-items: flex-start;
   width: 100%;
-  max-width: 1200px; /* 최대 너비 설정 */
-  margin-bottom: 20px; /* 아래 여백 추가 */
-  padding-top: 30px;
+  max-width: 75rem; /* 최대 너비 1200px */
+  margin-bottom: var(--spacing-base);
+  padding-top: 1.875rem; /* 상단 여백 30px */
 }
 
 .site-title {
   font-size: 2rem;
-  color: black; /* 텍스트 색상 검정 */
+  color: black;
   text-decoration: none;
-  font-family: 'Helvetica', sans-serif; /* 폰트 설정 */
-  font-weight: bold; /* 볼드체 설정 */
+  font-family: 'Helvetica', sans-serif;
+  font-weight: bold;
 }
 
 .site-title:hover {
   text-decoration: underline;
-  text-decoration-color: #458EF7; /* 호버 시 밑줄 색상 #458EF7 */
+  text-decoration-color: #458EF7;
 }
 
 main {
@@ -36,36 +52,42 @@ main {
   justify-content: center;
   align-items: flex-start;
   width: 100%;
-  max-width: 1200px;
-  text-align: left; /* 텍스트 왼쪽 정렬 */
+  max-width: 75rem; /* 최대 너비 1200px */
+  text-align: left;
 }
 
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 
 .profile-container {
   display: flex;
   align-items: flex-start;
-  margin-top: 20px;
-  width: 100%;
+  justify-content: center;
+  margin-top: 1.25rem; /* 20px */
+  width: fit-content;
 }
 
 .profile-pic {
-  width: 250px; /* 원하는 크기로 조정 */
-  height: 250px; /* 원하는 크기로 조정 */
-  border-radius: 80%; /* 원형으로 만들기 */
-  border: 7px solid #458EF7; /* 파란색 테두리 추가 */
-  margin-right: 70px; /* 사진과 설명 사이 여백 추가 */
+  width: 15rem; /* 240px */
+  height: 15rem; /* 240px */
+  border-radius: 50%;
+  border: 0.4375rem solid #458EF7; /* 7px */
+  margin-right: 4.375rem; /* 70px */
 }
-
 
 .profile-description {
   flex: 1;
-  max-width: 600px; /* 설명의 최대 너비 설정 */
+  max-width: 37.5rem; /* 600px */
 }
 
 .profile-description h1 {
-  font-size: 1.5rem; /* 원하는 크기로 조정 */
-  color: black;  /* 텍스트 색상 검정 */
-  margin-top: 0; /* 위쪽 여백 제거 */
+  font-size: 1.5rem;
+  color: black;
+  margin-top: 0;
 }
 
 .profile-description p {
@@ -74,24 +96,24 @@ main {
 }
 
 .profile-description a {
-  color: black; /* 링크 색상 검정 */
+  color: #5E5E5E;
   text-decoration: none;
 }
 
 .profile-description a:hover {
   text-decoration: underline;
-  text-decoration-color: #458EF7; /* 호버 시 밑줄 색상 #458EF7 */
+  text-decoration-color: #458EF7;
 }
 
 .contact-info {
   display: flex;
-  margin-top: 20px;
+  margin-top: var(--spacing-base);
 }
 
 .contact-item {
   display: flex;
   align-items: center;
-  margin-right: 20px;
+  margin-right: var(--spacing-base);
 }
 
 .contact-item:last-child {
@@ -99,33 +121,34 @@ main {
 }
 
 .contact-icon {
-  width: 20px; /* 아이콘의 크기 조정 */
-  height: 20px; /* 아이콘의 크기 조정 */
-  margin-right: 10px;
+  width: 1.25rem; /* 20px */
+  height: 1.25rem; /* 20px */
+  margin-right: 0.625rem; /* 10px */
 }
 
 /* 반응형 디자인 추가 */
-@media (max-width: 768px) {
-  .App-header, main {
-    align-items: center; /* 중앙 정렬 */
-    text-align: center; /* 텍스트 중앙 정렬 */
+@media (max-width: 48rem) {
+  .App-header,
+  main {
+    align-items: center;
+    text-align: center;
   }
 
   .profile-container {
-    flex-direction: column; /* 열 방향으로 변경 */
-    align-items: center; /* 중앙 정렬 */
+    flex-direction: column;
+    align-items: center;
   }
 
   .profile-pic {
-    margin-right: 0; /* 오른쪽 여백 제거 */
-    margin-bottom: 20px; /* 아래 여백 추가 */
+    margin-right: 0;
+    margin-bottom: var(--spacing-base);
   }
 
   .profile-description {
-    max-width: 100%; /* 최대 너비 100% */
+    max-width: 100%;
   }
 
   .contact-info {
-    justify-content: center; /* 중앙 정렬 */
+    justify-content: center;
   }
 }
