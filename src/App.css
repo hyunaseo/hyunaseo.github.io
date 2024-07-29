@@ -24,12 +24,16 @@ body {
   padding: 0 5%;
 }
 
-.App-header {
+.wrapper {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   width: 100%;
   max-width: 75rem; /* 최대 너비 1200px */
+}
+
+.App-header {
+  width: 100%;
   margin-bottom: var(--spacing-base);
   padding-top: 1.875rem; /* 상단 여백 30px */
 }
@@ -40,6 +44,7 @@ body {
   text-decoration: none;
   font-family: 'Helvetica', sans-serif;
   font-weight: bold;
+  margin-left: 2.1875rem; 
 }
 
 .site-title:hover {
@@ -49,18 +54,11 @@ body {
 
 main {
   display: flex;
+  flex-direction: column; /* 전체 메인 섹션을 세로 정렬로 변경 */
   justify-content: center;
   align-items: flex-start;
   width: 100%;
-  max-width: 75rem; /* 최대 너비 1200px */
   text-align: left;
-}
-
-.wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
 }
 
 .profile-container {
@@ -68,15 +66,17 @@ main {
   align-items: flex-start;
   justify-content: center;
   margin-top: 1.25rem; /* 20px */
-  width: fit-content;
+  width: 100%;
+  flex-wrap: wrap;
 }
 
 .profile-pic {
-  width: 15rem; /* 240px */
-  height: 15rem; /* 240px */
+  width: 16.5rem; /* 240px */
+  height: 16.5rem; /* 240px */
   border-radius: 50%;
   border: 0.4375rem solid #458EF7; /* 7px */
-  margin-right: 4.375rem; /* 70px */
+  margin-right: 2.1875rem; /* 35px */
+  flex-shrink: 0; /* 이미지가 줄어들지 않도록 */
 }
 
 .profile-description {
@@ -108,12 +108,14 @@ main {
 .contact-info {
   display: flex;
   margin-top: var(--spacing-base);
+  flex-wrap: wrap;
 }
 
 .contact-item {
   display: flex;
   align-items: center;
   margin-right: var(--spacing-base);
+  margin-bottom: var(--spacing-base);
 }
 
 .contact-item:last-child {
@@ -125,6 +127,53 @@ main {
   height: 1.25rem; /* 20px */
   margin-right: 0.625rem; /* 10px */
 }
+
+/* News 섹션 스타일 */
+.news-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* 중앙 정렬 */
+  margin-top: 3rem; /* 섹션 위쪽 여백 */
+  width: 100%;
+}
+
+.news-content {
+  max-width: 52.5rem; /* 600px */
+  text-align: left; /* 텍스트 왼쪽 정렬 */
+}
+
+.news-title {
+  font-size: 1.75rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem; /* 제목 아래 여백 */
+  /* text-align: center; */
+}
+
+.news-list {
+  list-style-type: disc;
+  padding-left: 1.5rem; /* 리스트 아이템 들여쓰기 */
+  /* text-align: center;  */
+}
+
+.news-list li {
+  margin-bottom: 0.5rem; /* 리스트 아이템 사이 여백 */
+}
+
+.news-date {
+  font-weight: bold;
+  color: #458EF7;
+}
+
+.news-list a {
+  color: #5E5E5E;
+  text-decoration: none;
+}
+
+.news-list a:hover {
+  text-decoration: underline;
+  text-decoration-color: #458EF7;
+}
+
 
 /* 반응형 디자인 추가 */
 @media (max-width: 48rem) {
@@ -150,5 +199,10 @@ main {
 
   .contact-info {
     justify-content: center;
+  }
+
+  .news-section {
+    margin-left: 0; /* 모바일에서는 왼쪽 여백 제거 */
+    max-width: 100%;
   }
 }

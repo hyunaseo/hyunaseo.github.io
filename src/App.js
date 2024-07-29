@@ -36,6 +36,20 @@ function App() {
               </div>
             </div>
           </div>
+          <div className="news-section">
+            <div className="news-content">
+              <h2 className="news-title">Latest News & Travels</h2>
+              <ul className="news-list">
+              <li><span className="news-date">June 2024:</span> I have been selected as <strong>a visiting research student at Singapore Management University</strong>! 
+              I will be working with <a href="https://faculty.smu.edu.sg/profile/rajesh-krishna-balan-591" target="_blank" rel="noopener noreferrer">Rajesh Balan</a> 
+              and <a href="https://www.thivyak.info/" target="_blank" rel="noopener noreferrer">Thivya Kandappu</a> on a Mixed Reality system with emotion sensing technology. 
+              My visit will last from September 2024 to March 2025, and I am very excited for this new journey.</li>
+              
+              <li><span className="news-date">April 2024:</span> Just submitted my paper to <strong>UIST 2024</strong>! 
+              Big thanks to my co-author Juheon Yi for sticking through despite the busy times moving to the UK!</li>
+              </ul>
+            </div>
+          </div>
         </main>
       </div>
     </div>
@@ -43,3 +57,11 @@ function App() {
 }
 
 export default App;
+
+
+
+
+
+
+
+
