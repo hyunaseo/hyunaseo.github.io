@@ -33,7 +33,7 @@ function App() {
                 </div>
                 <div className="contact-item">
                   <FontAwesomeIcon icon={faGithub} className="contact-icon" />
-                  <a href="https://github.com/hyunaseo" target="_blank" rel="noopener noreferrer">https://github.com/hyunas1996</a>
+                  <a href="https://github.com/hyunaseo" target="_blank" rel="noopener noreferrer">https://github.com/hyunaseo</a>
                 </div>
               </div>
             </div>
@@ -42,6 +42,8 @@ function App() {
             <div className="news-content">
               <h2 className="news-title">Latest News & Travels</h2>
               <ul className="news-list">
+              <li><span className="news-date">Jul 2024:</span> <strong>"GradualReality"</strong> is accepted to <strong>ACM UIST 2024</strong>. See you all in Pittsburgh!!!</li>
+              
               <li><span className="news-date">June 2024:</span> I have been selected as <strong>a visiting research student at Singapore Management University</strong>! 
               I will be working with <a href="https://faculty.smu.edu.sg/profile/rajesh-krishna-balan-591" target="_blank" rel="noopener noreferrer">Rajesh Balan</a> and <a href="https://www.thivyak.info/" target="_blank" rel="noopener noreferrer">Thivya Kandappu</a> on a Mixed Reality system with emotion sensing technology. 
               My visit will last from September 2024 to March 2025, and I am very excited for this new journey.</li>
@@ -60,7 +62,7 @@ function App() {
                     <iframe width="320" height="240" src="https://www.youtube.com/embed/_aDg-ykkT-8" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                   </div>
                   <div className="publication-description">
-                    <h3>GradualReality</h3>
+                    <h3>GradualReality: Enhancing Physical Object Interaction in Virtual Reality via Interaction State-Aware Blending</h3>
                     <p className="publication-authors"><strong><u>Hyuna Seo</u></strong>, <a href="https://juheonyi.github.io/" target="_blank" rel="noopener noreferrer">Juheon Yi</a>, <a href="https://faculty.smu.edu.sg/profile/rajesh-krishna-balan-591" target="_blank" rel="noopener noreferrer">Rajesh Balan</a>, <a href="https://youngkilee.blogspot.com/" target="_blank" rel="noopener noreferrer">Youngki Lee</a></p>
                     <p>GradualReality enables physical object interaction while being highly immersed into the virtual environment. We designed Interaction State-Aware Blending approach, which gradually integrates physical world information into the virtual world based on the user's current interaction state. Please refer to our demo video!</p>
                     <div className="publication-links">
