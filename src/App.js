@@ -59,7 +59,7 @@ function App() {
               <ul className="publication-list">
                 <li className="publication-item">
                   <div className="publication-video">
-                    <iframe width="320" height="240" src="https://youtu.be/R0vnikegaKo?si=j_icdAdrJwaXic2U" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                    <iframe width="320" height="240" src="https://www.youtube.com/embed/3xO93qFvpqA?si=E7ZT7_icBOqSmyg5" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                   </div>
                   <div className="publication-description">
                     <h3>GradualReality: Enhancing Physical Object Interaction in Virtual Reality via Interaction State-Aware Blending</h3>
