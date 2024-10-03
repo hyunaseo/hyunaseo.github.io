@@ -69,8 +69,8 @@ function App() {
                       <a href="https://github.com/hyunaseo/GradualReality" target="_blank" rel="noopener noreferrer">
                         <FontAwesomeIcon icon={faGithub} className="publication-icon" />
                       </a>
-                      <a href="https://doi.org/10.1145/3654777.3676463" target="_blank" rel="noopener noreferrer">
-                        <FontAwesomeIcon icon={faFilePdf} className="publication-icon" />
+                      <a href={`${process.env.PUBLIC_URL}/cv.pdf`} target="_blank" rel="noopener noreferrer">
+                       <FontAwesomeIcon icon={faFilePdf} className="publication-icon" /> 
                       </a>
                     </div>
                   </div>
