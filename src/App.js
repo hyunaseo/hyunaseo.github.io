@@ -42,14 +42,14 @@ function App() {
             <div className="news-content">
               <h2 className="news-title">Latest News & Travels</h2>
               <ul className="news-list">
-              <li><span className="news-date">Jul 2024:</span> <strong>"GradualReality"</strong> is accepted to <strong>ACM UIST 2024</strong>. See you all in Pittsburgh!!!</li>
-              
-              <li><span className="news-date">June 2024:</span> I have been selected as <strong>a visiting research student at Singapore Management University</strong>! 
-              I will be working with <a href="https://faculty.smu.edu.sg/profile/rajesh-krishna-balan-591" target="_blank" rel="noopener noreferrer">Rajesh Balan</a> and <a href="https://www.thivyak.info/" target="_blank" rel="noopener noreferrer">Thivya Kandappu</a> on a Mixed Reality system with emotion sensing technology. 
-              My visit will last from September 2024 to March 2025, and I am very excited for this new journey.</li>
-              
-              <li><span className="news-date">April 2024:</span> Submitted one paper to <strong>UIST 2024</strong>! 
-              Big thanks to my co-author Juheon Yi for his support during the busy times of moving to the UK!</li>
+              <li><span className="news-date">Oct 2024:</span> Serving as a reviewer for <a href="https://chi2025.acm.org/for-authors/case-studies/" target="_blank" rel="noopener noreferrer">CHI 2025 Case Studies</a>. Excited to contribute to the community!</li>
+              <li><span className="news-date">Oct 2024:</span> Received <a href="https://buildyourfuture.withgoogle.com/" target="_blank" rel="noopener noreferrer">East Asia Student Travel Grants</a> for my UIST travel from Google. Thank you!</li>              
+              <li><span className="news-date">Oct 2024:</span> Presented my first paper, <b href="https://dl.acm.org/doi/10.1145/3654777.3676463" target="_blank" rel="noopener noreferrer">GradualReality</b>, at <a href="https://uist.acm.org/2024/" target="_blank" rel="noopener noreferrer">UIST 2024</a>. Awesome people!</li>              
+              <li><span className="news-date">Sep 2024:</span> Just arrived in Singapore🇸🇬 Working with <a href="https://faculty.smu.edu.sg/profile/rajesh-krishna-balan-591" target="_blank" rel="noopener noreferrer">Rajesh Balan</a> and <a href="https://www.thivyak.info/" target="_blank" rel="noopener noreferrer">Thivya Kandappu</a> until April 2025.</li>                
+              <li><span className="news-date">Jul 2024:</span> One paper is accepted to <a href="https://uist.acm.org/2024/" target="_blank" rel="noopener noreferrer">UIST 2024</a>. See you all in Pittsburgh 🏴‍☠️</li>
+              <li><span className="news-date">Jun 2024:</span> Selected as a visiting research student at <a href="https://www.smu.edu.sg/" target="_blank" rel="noopener noreferrer">Singapore Management University</a>.</li>
+              <li><span className="news-date">Apr 2024:</span> Submitted one paper to <a href="https://uist.acm.org/2024/" target="_blank" rel="noopener noreferrer">UIST 2024</a>! 
+              Big thanks to my co-author <a href="https://juheonyi.github.io/" target="_blank" rel="noopener noreferrer">Juheon</a> for the support during my move to the UK!</li>
               </ul>
             </div>
           </div>
@@ -69,7 +69,7 @@ function App() {
                       <a href="https://github.com/hyunaseo/GradualReality" target="_blank" rel="noopener noreferrer">
                         <FontAwesomeIcon icon={faGithub} className="publication-icon" />
                       </a>
-                      <a href={`${process.env.PUBLIC_URL}/cv.pdf`} target="_blank" rel="noopener noreferrer">
+                      <a href="https://dl.acm.org/doi/10.1145/3654777.3676463" target="_blank" rel="noopener noreferrer">
                        <FontAwesomeIcon icon={faFilePdf} className="publication-icon" /> 
                       </a>
                     </div>
