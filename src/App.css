@@ -270,6 +270,8 @@ main {
 .publication-links {
   display: flex;
   align-items: center;
+  /* border-top: 1px dashed #4a4a4a; 진회색 점선 */
+
 }
 
 .publication-icon {
@@ -281,13 +283,13 @@ main {
 
 .publication-links a {
   font-size: 0.9rem;
-  color: #4a4a4a; /* 진회색 */
+  color: #295594; /* 진회색 */
   text-decoration: none;
   margin-right: 10px; /* 링크 간 간격 */
 }
 
 .publication-links a:hover {
-  color: #295594; /* 마우스 오버 시 색상 */
+  color: #458EF7; /* 마우스 오버 시 색상 */
 }
 
 /* 반응형 디자인 추가 */
