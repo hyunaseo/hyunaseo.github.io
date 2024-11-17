@@ -279,6 +279,17 @@ main {
   color: var(--icon-color);
 }
 
+.publication-links a {
+  font-size: 0.9rem;
+  color: #4a4a4a; /* 진회색 */
+  text-decoration: none;
+  margin-right: 10px; /* 링크 간 간격 */
+}
+
+.publication-links a:hover {
+  color: #295594; /* 마우스 오버 시 색상 */
+}
+
 /* 반응형 디자인 추가 */
 @media (max-width: 48rem) {
   .App-header,

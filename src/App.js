@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faYoutube } from '@fortawesome/free-brands-svg-icons';
 import { faFilePdf } from '@fortawesome/free-solid-svg-icons'; // PDF 아이콘 추가
+import { faVideo, faFilm} from '@fortawesome/free-solid-svg-icons';
 
 function App() {
   return (
@@ -66,13 +67,17 @@ function App() {
                     <p className="publication-authors"><strong><u>Hyuna Seo</u></strong>, <a href="https://juheonyi.github.io/" target="_blank" rel="noopener noreferrer">Juheon Yi</a>, <a href="https://faculty.smu.edu.sg/profile/rajesh-krishna-balan-591" target="_blank" rel="noopener noreferrer">Rajesh Balan</a>, <a href="https://youngkilee.blogspot.com/" target="_blank" rel="noopener noreferrer">Youngki Lee</a></p>
                     <p>GradualReality enables physical object interaction while being highly immersed into the virtual environment. We designed Interaction State-Aware Blending approach, which gradually integrates physical world information into the virtual world based on the user's current interaction state. Please refer to our demo video!</p>
                     <div className="publication-links">
-                      <a href="https://github.com/hyunaseo/GradualReality" target="_blank" rel="noopener noreferrer">
-                        <FontAwesomeIcon icon={faGithub} className="publication-icon" />
-                      </a>
-                      <a href="https://dl.acm.org/doi/10.1145/3654777.3676463" target="_blank" rel="noopener noreferrer">
-                       <FontAwesomeIcon icon={faFilePdf} className="publication-icon" /> 
-                      </a>
-                    </div>
+                                <a href="https://dl.acm.org/doi/10.1145/3654777.3676463" target="_blank" rel="noopener noreferrer">Paper</a> 
+                                
+
+                                <a href="https://github.com/hyunaseo/GradualReality" target="_blank" rel="noopener noreferrer">Code</a> 
+
+
+                                <a href="https://youtu.be/R0vnikegaKo?si=2jlC2twPCTttSDlb" target="_blank" rel="noopener noreferrer">Demo Video</a> 
+
+                                
+                                <a href="https://youtu.be/MpIXc-GUvLs?si=l52TB1ktbC2QHpTR" target="_blank" rel="noopener noreferrer">Conference Video</a>
+                            </div>
                   </div>
                 </li>
                 {/* 예시로 두 번째 비디오와 설명 쌍을 추가합니다. 필요에 따라 더 추가할 수 있습니다. */}
