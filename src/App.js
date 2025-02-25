@@ -43,7 +43,7 @@ function App() {
             <div className="news-content">
               <h2 className="news-title">Latest News & Travels</h2>
               <ul className="news-list">
-              <li><span className="news-date">Mar 2025:</span> Serving as a reviewer for <a href="https://dis.acm.org/2025/" target="_blank" rel="noopener noreferrer">DIS 2025</a> and  <a href="https://cc.acm.org/2025/" target="_blank" rel="noopener noreferrer">Creativity & Cognition 2025</a>.</li>
+              <li><span className="news-date">Mar 2025:</span> Serving as a reviewer for <a href="https://dis.acm.org/2025/" target="_blank" rel="noopener noreferrer">DIS 2025</a> and  <a href="https://cc.acm.org/2025/" target="_blank" rel="noopener noreferrer">Creativity  Cognition 2025</a>.</li>
               <li><span className="news-date">Feb 2025:</span> Received a outstanding presentation award🎉 from <a href="https://2025winter.sigchi.kr/" target="_blank" rel="noopener noreferrer">Top Conference Session</a> at <a href="https://conference.hcikorea.org/hcik2025/main/main.asp" target="_blank" rel="noopener noreferrer">HCI Korea 2025</a>.</li>
               <li><span className="news-date">Dec 2024:</span> Serving as a reviewer for <a href="https://www.ubicomp.org/ubicomp-iswc-2025/" target="_blank" rel="noopener noreferrer">IMWUT 2025</a>. Excited to contribute to the community!</li>
               <li><span className="news-date">Oct 2024:</span> Received <a href="https://buildyourfuture.withgoogle.com/" target="_blank" rel="noopener noreferrer">East Asia Student Travel Grants</a> for my UIST travel from Google. Thank you!</li>              
