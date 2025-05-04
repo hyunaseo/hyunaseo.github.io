@@ -30,18 +30,17 @@ body {
 .wrapper {
   display: flex;
   flex-direction: column;
-  align-items: flex-start; /* 좌측 정렬 유지 */
+  align-items: flex-start;
   width: 100%;
-  max-width: 75rem; /* 1200px */
-  margin: 0 auto; /* 가운데 정렬 추가 */
-  padding: 0 1.5rem; /* 좌우 여백 살짝 추가 */
+  max-width: 75rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
 }
-
 
 .App-header {
   width: 100%;
   margin-bottom: var(--spacing-base);
-  padding-top: 1.875rem; /* 상단 여백 30px */
+  padding-top: 1.875rem;
 }
 
 .site-title {
@@ -50,7 +49,7 @@ body {
   text-decoration: none;
   font-family: 'Helvetica', sans-serif;
   font-weight: bold;
-  margin-left: 2.1875rem; 
+  margin-left: 2.1875rem;
 }
 
 .site-title:hover {
@@ -60,7 +59,7 @@ body {
 
 main {
   display: flex;
-  flex-direction: column; /* 전체 메인 섹션을 세로 정렬로 변경 */
+  flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   width: 100%;
@@ -73,23 +72,23 @@ main {
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  margin-top: 1.25rem; /* 20px */
+  margin-top: 1.25rem;
   width: 100%;
   flex-wrap: wrap;
 }
 
 .profile-pic {
-  width: 15.5rem; /* 240px */
-  height: 15.5rem; /* 240px */
+  width: 15.5rem;
+  height: 15.5rem;
   border-radius: 50%;
-  border: 0.4375rem solid var(--highlight-color); /* 7px */
-  margin-right: 2.1875rem; /* 35px */
-  flex-shrink: 0; /* 이미지가 줄어들지 않도록 */
+  border: 0.4375rem solid var(--highlight-color);
+  margin-right: 2.1875rem;
+  flex-shrink: 0;
 }
 
 .profile-description {
   flex: 1;
-  max-width: 37.5rem; /* 600px */
+  max-width: 37.5rem;
 }
 
 .profile-description h1 {
@@ -115,7 +114,6 @@ main {
 
 .contact-info {
   display: flex;
-  /* margin-top: var(--spacing-base); */
   flex-wrap: wrap;
   margin-top: 0.5rem;
 }
@@ -127,14 +125,10 @@ main {
   margin-bottom: var(--spacing-base);
 }
 
-.contact-item:last-child {
-  margin-right: 0;
-}
-
 .contact-icon {
-  width: 1.25rem; /* 20px */
-  height: 1.25rem; /* 20px */
-  margin-right: 0.625rem; /* 10px */
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-right: 0.625rem;
   color: var(--icon-color);
 }
 
@@ -143,67 +137,59 @@ main {
 .news-section {
   display: flex;
   flex-direction: column;
-  align-items: center; /* 중앙 정렬 */
-  margin-top: 3rem; /* 섹션 위쪽 여백 */
+  align-items: center;
+  margin-top: 1rem;
   width: 100%;
 }
 
 .news-title {
   font-size: 1.75rem;
   font-weight: bold;
-  margin-bottom: 0.5rem; /* 제목 아래 여백 */
-  /* text-align: center; */
+  margin-bottom: 0.5rem;
 }
 
 .news-content {
   max-width: 53.5rem;
-  width: 100%; /* ✅ 이 줄 추가 */
+  width: 100%;
   text-align: left;
-  word-break: break-word; /* ✅ 긴 단어도 줄바꿈 */
+  word-break: break-word;
 }
-
 
 .news-list {
   list-style-type: disc;
-  padding-left: 1.5rem; /* 리스트 아이템 들여쓰기 */
-  /* text-align: center;  */
+  padding-left: 1.5rem;
 }
 
 .news-list li {
-  font-size: 0.9rem;  
-  margin-bottom: 0.3rem; /* 리스트 아이템 사이 여백 */
+  font-size: 0.9rem;
+  margin-bottom: 0.3rem;
 }
 
 .news-date {
-  /* font-weight: bold; */
   color: #458EF7;
-  font-size: 0.9rem; 
+  font-size: 0.9rem;
 }
 
 .news-list a {
   color: var(--link-color);
   text-decoration: none;
-  font-size: 0.9rem; 
+  font-size: 0.9rem;
 }
 
 .news-list b {
   color: var(--link-color);
   text-decoration: underline;
   font-weight: bold;
-  font-size: 0.9rem; 
+  font-size: 0.9rem;
 }
 
 .news-list li,
 .news-list a,
 .news-list b {
-  word-break: break-word; /* ✅ 긴 링크나 DOI가 너비 깨는 것 방지 */
+  word-break: break-word;
 }
 
-.news-list a:hover {
-  text-decoration: underline;
-  text-decoration-color: var(--highlight-color);
-}
-
+.news-list a:hover,
 .news-list b:hover {
   text-decoration-color: var(--highlight-color);
 }
@@ -227,21 +213,20 @@ main {
   color: var(--link-color);
 }
 
-
 /**********************PUBLICATIONS**********************/
 
 .publication-section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 3rem; /* 섹션 위쪽 여백 */
+  margin-top: 1rem;
   width: 100%;
 }
 
 .publication-title {
   font-size: 1.75rem;
   font-weight: bold;
-  margin-bottom: 0.4rem; /* 제목 아래 여백 */
+  margin-bottom: 0.4rem;
 }
 
 .publication-content {
@@ -250,38 +235,44 @@ main {
 }
 
 .publication-list {
-  list-style: none; /* 리스트 스타일 제거 */
+  list-style: none;
   padding: 0;
 }
 
 .publication-item {
   display: flex;
-  margin-bottom: 2rem; /* 각 항목 사이의 여백 */
+  align-items: flex-start;
+  margin-bottom: 2rem;
   max-width: 53.5rem;
 }
 
 .publication-video {
-  min-width: 320px; /* 비디오 최소 너비 */
+  min-width: 320px;
   margin-right: 1rem;
 }
 
-.publication-description{
-  flex: 1;
-  max-width: 52.5rem; /* 600px */
-  font-size: 0.9rem; 
+.publication-video iframe {
+  margin-top: 0.2rem;
+  vertical-align: top;
+  display: block;
 }
 
-.publication-authors{
+.publication-description h3 {
+  margin-top: 0; 
   flex: 1;
-  max-width: 52.5rem; /* 600px */
-  font-size: 0.9rem; 
-  color: var(--link-color);
+  max-width: 52.5rem;
+  font-size: 0.9rem;
+}
+
+.publication-authors {
+  margin-top: 0.4rem; /* 미세하게 당겨줌 */
+  line-height: 1.2;
 }
 
 .publication-authors a {
   color: var(--link-color);
   text-decoration: none;
-  font-size: 0.9rem; 
+  font-size: 0.9rem;
 }
 
 .publication-authors a:hover {
@@ -291,24 +282,22 @@ main {
 
 .publication-description h3 {
   font-size: 1.1rem;
-  margin-bottom: 0.15rem;
+  margin-bottom: 0.05rem;
   color: var(--highlight-color);
 }
 
 .publication-description p {
   font-size: 1rem;
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.0rem;
 }
 
 .publication-links {
   display: flex;
   align-items: center;
-  /* border-top: 1px dashed #4a4a4a; 진회색 점선 */
-
 }
 
 .publication-icon {
-  width: 1.5rem; /* 아이콘 크기 */
+  width: 1.5rem;
   height: 1.5rem;
   margin-right: 1rem;
   color: var(--icon-color);
@@ -316,16 +305,16 @@ main {
 
 .publication-links a {
   font-size: 0.9rem;
-  color: #295594; /* 진회색 */
+  color: #295594;
   text-decoration: none;
-  margin-right: 10px; /* 링크 간 간격 */
+  margin-right: 10px;
 }
 
 .publication-links a:hover {
-  color: #458EF7; /* 마우스 오버 시 색상 */
+  color: #458EF7;
 }
 
-/* 반응형 디자인 추가 */
+/* 반응형 디자인 */
 @media (max-width: 48rem) {
   .App-header,
   main {
