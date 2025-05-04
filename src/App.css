@@ -2,14 +2,14 @@
   --font-size-base: 1rem;
   --spacing-base: 1rem;
   --link-color: #295594;
-  --highligh-color: #458EF7;
+  --highlight-color: #458EF7;
   --icon-color: #295594;
 }
 
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 
 body {
@@ -30,10 +30,13 @@ body {
 .wrapper {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: flex-start; /* 좌측 정렬 유지 */
   width: 100%;
-  max-width: 75rem; /* 최대 너비 1200px */
+  max-width: 75rem; /* 1200px */
+  margin: 0 auto; /* 가운데 정렬 추가 */
+  padding: 0 1.5rem; /* 좌우 여백 살짝 추가 */
 }
+
 
 .App-header {
   width: 100%;
@@ -52,7 +55,7 @@ body {
 
 .site-title:hover {
   text-decoration: underline;
-  text-decoration-color: var(--highligh-color);
+  text-decoration-color: var(--highlight-color);
 }
 
 main {
@@ -79,7 +82,7 @@ main {
   width: 15.5rem; /* 240px */
   height: 15.5rem; /* 240px */
   border-radius: 50%;
-  border: 0.4375rem solid var(--highligh-color); /* 7px */
+  border: 0.4375rem solid var(--highlight-color); /* 7px */
   margin-right: 2.1875rem; /* 35px */
   flex-shrink: 0; /* 이미지가 줄어들지 않도록 */
 }
@@ -107,7 +110,7 @@ main {
 
 .profile-description a:hover {
   text-decoration: underline;
-  text-decoration-color: var(--highligh-color);
+  text-decoration-color: var(--highlight-color);
 }
 
 .contact-info {
@@ -153,9 +156,12 @@ main {
 }
 
 .news-content {
-  max-width: 53.5rem; /* 600px */
-  text-align: left; /* 텍스트 왼쪽 정렬 */
+  max-width: 53.5rem;
+  width: 100%; /* ✅ 이 줄 추가 */
+  text-align: left;
+  word-break: break-word; /* ✅ 긴 단어도 줄바꿈 */
 }
+
 
 .news-list {
   list-style-type: disc;
@@ -187,14 +193,41 @@ main {
   font-size: 0.9rem; 
 }
 
+.news-list li,
+.news-list a,
+.news-list b {
+  word-break: break-word; /* ✅ 긴 링크나 DOI가 너비 깨는 것 방지 */
+}
+
 .news-list a:hover {
   text-decoration: underline;
-  text-decoration-color: var(--highligh-color);
+  text-decoration-color: var(--highlight-color);
 }
 
 .news-list b:hover {
-  text-decoration-color: var(--highligh-color);
+  text-decoration-color: var(--highlight-color);
 }
+
+.news-toggle-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0.3rem 0 0 0;
+  font: inherit;
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  line-height: 1;
+}
+
+.news-toggle-btn:hover {
+  color: var(--link-color);
+}
+
+
 /**********************PUBLICATIONS**********************/
 
 .publication-section {
@@ -253,13 +286,13 @@ main {
 
 .publication-authors a:hover {
   text-decoration: underline;
-  text-decoration-color: var(--highligh-color);
+  text-decoration-color: var(--highlight-color);
 }
 
 .publication-description h3 {
   font-size: 1.1rem;
   margin-bottom: 0.15rem;
-  color: var(--highligh-color);
+  color: var(--highlight-color);
 }
 
 .publication-description p {
