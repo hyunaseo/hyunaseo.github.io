@@ -84,9 +84,9 @@ function App() {
                     <p className="publication-authors"><strong><u>HyunA Seo</u></strong>, <a href="https://youngkilee.blogspot.com/" target="_blank" rel="noopener noreferrer">Youngki Lee</a>, <a href="" target="_blank" rel="noopener noreferrer">Rajesh Balan</a>, <a href="https://www.thivyak.info/" target="_blank" rel="noopener noreferrer">Thivya Kandappu</a></p>
                     <p className="publication-venue"><em>UIST 2025</em></p>
                     <div className="publication-links">
-                      <a href="https://doi.org/10.1145/3746059.3747656" target="_blank" rel="noopener noreferrer">DOI</a>
+                      <a href="https://doi.org/10.1145/3746059.3747656" target="_blank" rel="noopener noreferrer">DOI(TBD)</a>
                       <a href={`${process.env.PUBLIC_URL}/pdfs/EmoShortcuts(UIST2025).pdf`} target="_blank" rel="noopener noreferrer">PDF</a>
-                      <a href="https://github.com/hyunaseo/EmoShortcuts" target="_blank" rel="noopener noreferrer">Code</a>
+                      <a href="https://github.com/hyunaseo/EmoShortcuts" target="_blank" rel="noopener noreferrer">Code(TBD)</a>
                       <a href="https://youtu.be/kupnLM0QBkY" target="_blank" rel="noopener noreferrer">Preview Video</a>
                     </div>
                   </div>
