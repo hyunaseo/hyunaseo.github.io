@@ -8,19 +8,21 @@ function App() {
   const [showAllNews, setShowAllNews] = useState(false);
 
   const newsItems = [
-    { date: 'May 2025', content: <><span className="semibold"><a href="https://doi.org/10.1145/3746059.3747656" target="_blank" rel="noopener noreferrer">EmoShortcuts</a></span> was accepted to UIST 2025. Welcome to Busan 🇰🇷</> },
-    { date: 'Apr 2025', content: <>Attending <a href="https://chi2025.acm.org/" target="_blank" rel="noopener noreferrer">CHI 2025</a> 🎡, presenting at <a href="https://xr-and-ai.github.io/" target="_blank" rel="noopener noreferrer">EverydayAR Workshop</a> and serving as a Session Chair for the first time!</> },
+    { date: 'Oct 2025', content: <>Serving as PC for <a href="https://iui.acm.org/2026/" target="_blank" rel="noopener noreferrer">ACM IUI 2026</a>, and Reviewer for <a href="https://chi2026.acm.org/" target="_blank" rel="noopener noreferrer">ACM CHI 2026</a> & <a href="https://percom.org/" target="_blank" rel="noopener noreferrer">IEEE PerCom 2026</a>.</> },
+    { date: 'Sep 2025', content: <>Back-to-back conferences ahead: UIST and ISMAR in Korea 🇰🇷. Looking forward to seeing old and new friends</> },
+    { date: 'May 2025', content: <><span className="semibold"><a href="https://doi.org/10.1145/3746059.3747656" target="_blank" rel="noopener noreferrer">EmoShortcuts</a></span> was accepted to  <a href="https://uist.acm.org/2025/" target="_blank" rel="noopener noreferrer">ACM UIST 2025</a>. Welcome to Busan 🇰🇷</> },
+    { date: 'Apr 2025', content: <>Attending <a href="https://chi2025.acm.org/" target="_blank" rel="noopener noreferrer">ACM CHI 2025</a> 🎡, presenting at <a href="https://xr-and-ai.github.io/" target="_blank" rel="noopener noreferrer">EverydayAR Workshop</a> and serving as a Session Chair for the first time!</> },
     { date: 'Apr 2025', content: <>Gave an invited talk at University of Tokyo, hosted by <a href="https://iis-lab.org/member/koji-yatani/" target="_blank" rel="noopener noreferrer">Koji Yatani</a>. Thank you for the kind invitation!</> },
     { date: 'Apr 2025', content: <>Back in Korea after wrapping up my visiting research at Singapore.</> },
-    { date: 'Mar 2025', content: <>Serving as a reviewer for <a href="https://dis.acm.org/2025/" target="_blank" rel="noopener noreferrer">DIS 2025</a> and <a href="https://cc.acm.org/2025/" target="_blank" rel="noopener noreferrer">Creativity & Cognition 2025</a>.</> },
+    { date: 'Mar 2025', content: <>Serving as a reviewer for <a href="https://dis.acm.org/2025/" target="_blank" rel="noopener noreferrer">ACM DIS 2025</a> and <a href="https://cc.acm.org/2025/" target="_blank" rel="noopener noreferrer">Creativity & Cognition 2025</a>.</> },
     { date: 'Feb 2025', content: <>Received an outstanding presentation award 🎉 from <a href="https://2025winter.sigchi.kr/" target="_blank" rel="noopener noreferrer">Top Conference Session</a> at <a href="https://conference.hcikorea.org/hcik2025/main/main.asp" target="_blank" rel="noopener noreferrer">HCI Korea 2025</a>.</> },
-    { date: 'Dec 2024', content: <>Serving as a reviewer for <a href="https://www.ubicomp.org/ubicomp-iswc-2025/" target="_blank" rel="noopener noreferrer">IMWUT 2025</a>. Excited to contribute to the community!</> },
+    { date: 'Dec 2024', content: <>Serving as a reviewer for <a href="https://www.ubicomp.org/ubicomp-iswc-2025/" target="_blank" rel="noopener noreferrer">ACM IMWUT 2025</a>. Excited to contribute to the community!</> },
     { date: 'Oct 2024', content: <>Received <a href="https://buildyourfuture.withgoogle.com/" target="_blank" rel="noopener noreferrer">East Asia Student Travel Grants</a> for my UIST travel from Google. Thank you!</> },
-    { date: 'Oct 2024', content: <>Presented my first paper, <span className="semibold"><a href="https://dl.acm.org/doi/10.1145/3654777.3676463" target="_blank" rel="noopener noreferrer">GradualReality</a></span>, at <a href="https://uist.acm.org/2024/" target="_blank" rel="noopener noreferrer">UIST 2024</a>. Awesome people!</> },
+    { date: 'Oct 2024', content: <>Presented my first paper, <span className="semibold"><a href="https://dl.acm.org/doi/10.1145/3654777.3676463" target="_blank" rel="noopener noreferrer">GradualReality</a></span>, at <a href="https://uist.acm.org/2024/" target="_blank" rel="noopener noreferrer">ACM UIST 2024</a>. Awesome people!</> },
     { date: 'Sep 2024', content: <>Just arrived in Singapore🇸🇬 working with <a href="https://faculty.smu.edu.sg/profile/rajesh-krishna-balan-591" target="_blank" rel="noopener noreferrer">Rajesh Balan</a> and <a href="https://www.thivyak.info/" target="_blank" rel="noopener noreferrer">Thivya Kandappu</a> until April 2025.</> },
     { date: 'Jul 2024', content: <>My first first-author paper, <span className="semibold"><a href="https://dl.acm.org/doi/10.1145/3654777.3676463" target="_blank" rel="noopener noreferrer">GradualReality</a></span>, was accepted to UIST 2024. See you all in Pittsburgh 🏴‍☠️</> },
     { date: 'Jun 2024', content: <>Selected as a visiting research student at <a href="https://www.smu.edu.sg/" target="_blank" rel="noopener noreferrer">Singapore Management University</a>.</> },
-    { date: 'Apr 2024', content: <>Submitted one paper to <a href="https://uist.acm.org/2024/" target="_blank" rel="noopener noreferrer">UIST 2024</a>! Big thanks to my co-author <a href="https://juheonyi.github.io/" target="_blank" rel="noopener noreferrer">Juheon</a> for the support during my move to the UK!</> },
+    { date: 'Apr 2024', content: <>Submitted one paper to <a href="https://uist.acm.org/2024/" target="_blank" rel="noopener noreferrer">ACM UIST 2024</a>! Big thanks to my co-author <a href="https://juheonyi.github.io/" target="_blank" rel="noopener noreferrer">Juheon</a> for the support during my move to the UK!</> },
   ];
 
   const displayedNews = showAllNews ? newsItems : newsItems.slice(0, 6);
@@ -82,9 +84,9 @@ function App() {
                   <div className="publication-description">
                     <h3>EmoShortcuts: Emotionally Expressive Body Augmentation for Social Mixed Reality Avatar</h3>
                     <p className="publication-authors"><strong><u>HyunA Seo</u></strong>, <a href="https://youngkilee.blogspot.com/" target="_blank" rel="noopener noreferrer">Youngki Lee</a>, <a href="" target="_blank" rel="noopener noreferrer">Rajesh Balan</a>, <a href="https://www.thivyak.info/" target="_blank" rel="noopener noreferrer">Thivya Kandappu</a></p>
-                    <p className="publication-venue"><em>UIST 2025</em></p>
+                    <p className="publication-venue"><em>ACM UIST 2025</em></p>
                     <div className="publication-links">
-                      <a href="https://doi.org/10.1145/3746059.3747656" target="_blank" rel="noopener noreferrer">DOI(TBD)</a>
+                      <a href="https://doi.org/10.1145/3746059.3747656" target="_blank" rel="noopener noreferrer">DOI</a>
                       <a href={`${process.env.PUBLIC_URL}/pdfs/EmoShortcuts(UIST2025).pdf`} target="_blank" rel="noopener noreferrer">PDF</a>
                       <a href="https://github.com/hyunaseo/EmoShortcuts" target="_blank" rel="noopener noreferrer">Code(TBD)</a>
                       <a href="https://youtu.be/kupnLM0QBkY" target="_blank" rel="noopener noreferrer">Preview Video</a>
@@ -102,7 +104,7 @@ function App() {
                   <div className="publication-description">
                     <h3>GradualReality: Enhancing Physical Object Interaction in Virtual Reality via Interaction State-Aware Blending</h3>
                     <p className="publication-authors"><strong><u>HyunA Seo</u></strong>, <a href="https://juheonyi.github.io/" target="_blank" rel="noopener noreferrer">Juheon Yi</a>, <a href="https://faculty.smu.edu.sg/profile/rajesh-krishna-balan-591" target="_blank" rel="noopener noreferrer">Rajesh Balan</a>, <a href="https://youngkilee.blogspot.com/" target="_blank" rel="noopener noreferrer">Youngki Lee</a></p>
-                    <p className="publication-venue"><em>UIST 2024</em></p>
+                    <p className="publication-venue"><em>ACM UIST 2024</em></p>
                     <div className="publication-links">
                       <a href="https://dl.acm.org/doi/10.1145/3654777.3676463" target="_blank" rel="noopener noreferrer">DOI</a>
                       <a href={`${process.env.PUBLIC_URL}/pdfs/GradualReality(UIST2024).pdf`} target="_blank" rel="noopener noreferrer">PDF</a>
