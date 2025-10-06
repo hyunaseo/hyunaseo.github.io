@@ -9,8 +9,8 @@ function App() {
 
   const newsItems = [
     { date: 'Oct 2025', content: <>Serving as Program Committee for <a href="https://iui.acm.org/2026/" target="_blank" rel="noopener noreferrer">ACM IUI 2026</a>, and Reviewer for <a href="https://chi2026.acm.org/" target="_blank" rel="noopener noreferrer">ACM CHI 2026</a> & <a href="https://percom.org/" target="_blank" rel="noopener noreferrer">IEEE PerCom 2026</a>.</> },
-    { date: 'Sep 2025', content: <>Back-to-back conferences ahead: UIST and ISMAR in Korea 🇰🇷. Looking forward to seeing old and new friends</> },
-    { date: 'May 2025', content: <><span className="semibold"><a href="https://doi.org/10.1145/3746059.3747656" target="_blank" rel="noopener noreferrer">EmoShortcuts</a></span> was accepted to  <a href="https://uist.acm.org/2025/" target="_blank" rel="noopener noreferrer">ACM UIST 2025</a>. Welcome to Busan 🇰🇷</> },
+    { date: 'Sep 2025', content: <>Back-to-back conferences ahead: UIST and ISMAR in Korea 🇰🇷. Looking forward to seeing old and new friends!</> },
+    { date: 'May 2025', content: <><span className="semibold"><a href="https://doi.org/10.1145/3746059.3747656" target="_blank" rel="noopener noreferrer">EmoShortcuts</a></span> was accepted to  <a href="https://uist.acm.org/2025/" target="_blank" rel="noopener noreferrer">ACM UIST 2025</a>. Welcome to Busan ⛴️</> },
     { date: 'Apr 2025', content: <>Attending <a href="https://chi2025.acm.org/" target="_blank" rel="noopener noreferrer">ACM CHI 2025</a> 🎡, presenting at <a href="https://xr-and-ai.github.io/" target="_blank" rel="noopener noreferrer">EverydayAR Workshop</a> and serving as a Session Chair for the first time!</> },
     { date: 'Apr 2025', content: <>Gave an invited talk at University of Tokyo, hosted by <a href="https://iis-lab.org/member/koji-yatani/" target="_blank" rel="noopener noreferrer">Koji Yatani</a>. Thank you for the kind invitation!</> },
     { date: 'Apr 2025', content: <>Back in Korea after wrapping up my visiting research at Singapore.</> },
@@ -22,7 +22,7 @@ function App() {
     { date: 'Sep 2024', content: <>Just arrived in Singapore🇸🇬 working with <a href="https://faculty.smu.edu.sg/profile/rajesh-krishna-balan-591" target="_blank" rel="noopener noreferrer">Rajesh Balan</a> and <a href="https://www.thivyak.info/" target="_blank" rel="noopener noreferrer">Thivya Kandappu</a> until April 2025.</> },
     { date: 'Jul 2024', content: <>My first first-author paper, <span className="semibold"><a href="https://dl.acm.org/doi/10.1145/3654777.3676463" target="_blank" rel="noopener noreferrer">GradualReality</a></span>, was accepted to UIST 2024. See you all in Pittsburgh 🏴‍☠️</> },
     { date: 'Jun 2024', content: <>Selected as a visiting research student at <a href="https://www.smu.edu.sg/" target="_blank" rel="noopener noreferrer">Singapore Management University</a>.</> },
-    { date: 'Apr 2024', content: <>Submitted one paper to <a href="https://uist.acm.org/2024/" target="_blank" rel="noopener noreferrer">ACM UIST 2024</a>! Big thanks to my co-author <a href="https://juheonyi.github.io/" target="_blank" rel="noopener noreferrer">Juheon</a> for the support during my move to the UK!</> },
+    { date: 'Apr 2024', content: <>Submitted one paper to <a href="https://uist.acm.org/2024/" target="_blank" rel="noopener noreferrer">ACM UIST 2024</a>! Big thanks to my co-author <a href="https://juheonyi.github.io/" target="_blank" rel="noopener noreferrer">Juheon</a>!</> },
   ];
 
   const displayedNews = showAllNews ? newsItems : newsItems.slice(0, 6);
