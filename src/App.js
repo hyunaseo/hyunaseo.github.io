@@ -8,7 +8,7 @@ function App() {
   const [showAllNews, setShowAllNews] = useState(false);
 
   const newsItems = [
-    { date: 'Oct 2025', content: <>Serving as PC for <a href="https://iui.acm.org/2026/" target="_blank" rel="noopener noreferrer">ACM IUI 2026</a>, and Reviewer for <a href="https://chi2026.acm.org/" target="_blank" rel="noopener noreferrer">ACM CHI 2026</a> & <a href="https://percom.org/" target="_blank" rel="noopener noreferrer">IEEE PerCom 2026</a>.</> },
+    { date: 'Oct 2025', content: <>Serving as Program Committee for <a href="https://iui.acm.org/2026/" target="_blank" rel="noopener noreferrer">ACM IUI 2026</a>, and Reviewer for <a href="https://chi2026.acm.org/" target="_blank" rel="noopener noreferrer">ACM CHI 2026</a> & <a href="https://percom.org/" target="_blank" rel="noopener noreferrer">IEEE PerCom 2026</a>.</> },
     { date: 'Sep 2025', content: <>Back-to-back conferences ahead: UIST and ISMAR in Korea 🇰🇷. Looking forward to seeing old and new friends</> },
     { date: 'May 2025', content: <><span className="semibold"><a href="https://doi.org/10.1145/3746059.3747656" target="_blank" rel="noopener noreferrer">EmoShortcuts</a></span> was accepted to  <a href="https://uist.acm.org/2025/" target="_blank" rel="noopener noreferrer">ACM UIST 2025</a>. Welcome to Busan 🇰🇷</> },
     { date: 'Apr 2025', content: <>Attending <a href="https://chi2025.acm.org/" target="_blank" rel="noopener noreferrer">ACM CHI 2025</a> 🎡, presenting at <a href="https://xr-and-ai.github.io/" target="_blank" rel="noopener noreferrer">EverydayAR Workshop</a> and serving as a Session Chair for the first time!</> },
